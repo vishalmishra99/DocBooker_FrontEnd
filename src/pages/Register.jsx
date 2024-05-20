@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://docbooker-backend.onrender.com/api/v1/user/patient/register",
+        "https://docbooker-backend-2.onrender.com/api/v1/user/patient/register",
         { firstName, lastName, email, phone, nic, dob, gender, password, role: 'Patient' },
         {
           withCredentials: true,
