@@ -13,7 +13,7 @@ const Navbar = () => {
 
     const handleLogout = async () => {
         await axios
-            .get("https://docbooker-backend.onrender.com/api/v1/user/patient/logout", { 
+            .get("https://docbooker-backend-2.onrender.com/api/v1/user/patient/logout", { 
                 withCredentials: true 
             })
             .then((res) => {
