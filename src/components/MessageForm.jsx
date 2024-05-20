@@ -13,7 +13,7 @@ const MessageForm = () => {
     e.preventDefault();
     try {
       await axios.post(
-        "https://docbooker-backend.onrender.com/api/v1/message/send",
+        "https://docbooker-backend-2.onrender.com/api/v1/message/send",
         { firstName, lastName, phone, email, message },
         {
           withCredentials: true,
