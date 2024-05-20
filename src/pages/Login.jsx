@@ -16,7 +16,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://docbooker-backend-fpxs.onrender.com/api/v1/user/login",
+        "https://docbooker-backend.onrender.com/api/v1/user/login",
         { email, password, confirmPassword, role: "Patient" },
         {
           withCredentials: true,
