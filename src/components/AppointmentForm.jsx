@@ -38,9 +38,9 @@ const AppointmentForm = () => {
       const { data } = await axios.get(
         "https://docbooker-backend-2.onrender.com/api/v1/user/doctors",
         { withCredentials: true },
-        {headers :{ 
+          headers :{ 
             'Access-Control-Allow-Origin' : '*'
-        }}
+          }
       );
       setDoctors(data.doctors);
       console.log(data.doctors);
