@@ -20,10 +20,13 @@ const App = () => {
       try {
         const response = await axios.get(
           "https://docbooker-backend-2.onrender.com/api/v1/user/patient/me", 
-          { withCredentials: true },
-           headers :{ 
+          { 
+            withCredentials: true,
+             headers :{ 
             'Access-Control-Allow-Origin' : '*'
           }
+          },
+          
         );
         setIsAuthenticated(true);
         setUser(response.data.user);
