@@ -20,7 +20,6 @@ const Login = () => {
         { email, password, confirmPassword, role: "Patient" },
         {
           withCredentials: true,
-          headers: { "Content-Type": "application/json",'Access-Control-Allow-Origin' : '*' },
         }
       );
       toast.success(response.data.message);
