@@ -18,10 +18,6 @@ const MessageForm = () => {
         {
           withCredentials: true,
         }
-          headers :{ 
-            'Access-Control-Allow-Origin' : '*',
-            'Content-type' : 'application/json'
-          }
       )
         .then((response) => {
           toast.success(response.data.message);
