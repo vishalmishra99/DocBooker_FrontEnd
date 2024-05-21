@@ -17,9 +17,10 @@ const MessageForm = () => {
         { firstName, lastName, phone, email, message },
         {
           withCredentials: true,
-          header: {
-            "Content-Type": "application/json",
-          },
+          {headers :{ 
+            'Access-Control-Allow-Origin' : '*',
+            'Content-type' : 'application/json'
+          }},
         }
       )
         .then((response) => {
