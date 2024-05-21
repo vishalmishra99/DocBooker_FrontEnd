@@ -18,7 +18,7 @@ const MessageForm = () => {
         {
           withCredentials: true,
         }
-      );
+      )
         .then((response) => {
           toast.success(response.data.message);
           setFirstName("");
