@@ -24,9 +24,8 @@ const App = () => {
             withCredentials: true,
              headers :{ 
             'Access-Control-Allow-Origin' : '*'
+            }
           }
-          },
-          
         );
         setIsAuthenticated(true);
         setUser(response.data.user);
