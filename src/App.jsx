@@ -23,7 +23,7 @@ const App = () => {
           { 
             withCredentials: true,    
           }
-        );
+        )
         setIsAuthenticated(true);
         setUser(response.data.user);
       }
