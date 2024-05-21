@@ -18,7 +18,11 @@ const App = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get("https://docbooker-backend-2.onrender.com/api/v1/user/patient/me", { withCredentials: true });
+        const response = await axios.get(
+          "https://docbooker-backend-2.onrender.com/api/v1/user/patient/me", 
+          { withCredentials: true },
+          Access-Control-Allow-Origin:"*"
+        );
         setIsAuthenticated(true);
         setUser(response.data.user);
       }
