@@ -17,11 +17,11 @@ const MessageForm = () => {
         { firstName, lastName, phone, email, message },
         {
           withCredentials: true,
-          {headers :{ 
+        }
+          headers :{ 
             'Access-Control-Allow-Origin' : '*',
             'Content-type' : 'application/json'
-          }},
-        }
+          }
       )
         .then((response) => {
           toast.success(response.data.message);
