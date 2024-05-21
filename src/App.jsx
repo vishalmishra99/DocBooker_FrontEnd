@@ -20,9 +20,7 @@ const App = () => {
       try {
         const response = await axios.get(
           "https://docbooker-backend-2.onrender.com/api/v1/user/patient/me", 
-          { 
-
-            
+          {
             withCredentials: true,       
           }
         )
