@@ -26,7 +26,6 @@ const Register = () => {
         { firstName, lastName, email, phone, nic, dob, gender, password, role: 'Patient' },
         {
           withCredentials: true,
-          headers: { "Content-Type": "application/json" },
         }
       );
       toast.success(response.data.message);
