@@ -14,10 +14,7 @@ const Navbar = () => {
     const handleLogout = async () => {
         await axios
             .get("https://docbooker-backend-2.onrender.com/api/v1/user/patient/logout", 
-                 { withCredentials: true },
-                 {headers :{ 
-                    'Access-Control-Allow-Origin' : '*'
-                  }}
+                 { withCredentials: true }
             )
             .then((res) => {
                 toast.success(res.data.message);
